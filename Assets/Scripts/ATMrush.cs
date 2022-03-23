@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class ATMrush : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static ATMrush instance;
 
-    // Update is called once per frame
-    void Update()
+    public List<GameObject> cubes = new List<GameObject>();
+
+
+    private void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;    
+        }
+    }
+    void Start()
+    {    
+    }
+    
+    public void StackCube(GameObject other , int index)
+    {
+
     }
 }
