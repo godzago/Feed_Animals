@@ -6,6 +6,7 @@ using DG.Tweening;
 public class ATMrush : MonoBehaviour
 {
     public static ATMrush instance;
+    public float MovmentDelay = 0.25f;
 
     public List<GameObject> cubes = new List<GameObject>();
 
@@ -41,6 +42,16 @@ public class ATMrush : MonoBehaviour
             cubes[i].transform.DOScale(new Vector3(0.25f, 0.25f, 0.25f), 0.1f));
             yield return new WaitForSeconds(0.05f);
         }
+    }
 
-    } 
+    private void MoveListElemenst()
+    {
+        for (int i = 1; i < cubes.Count; i++)
+        {
+            Vector3 pos = cubes[i].transform.localPosition;
+            pos.x = cubes[i - 1].transform.localPosition.x;
+            cubes[i].transform.DOLocalMove(pos, MovmentDelay);
+        }
+    }
+
 }
