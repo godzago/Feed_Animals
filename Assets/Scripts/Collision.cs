@@ -16,7 +16,7 @@ public class Collision : MonoBehaviour
                 other.gameObject.AddComponent<Rigidbody>();
                 other.gameObject.AddComponent<Rigidbody>().isKinematic = true;
 
-                ATMrush.instance.StackCube(other.gameObject, ATMrush.instance.cubes.Count - 1);
+                ATMrush.instance.StackCube(other.gameObject,ATMrush.instance.cubes.Count - 1);
 
 
             }
