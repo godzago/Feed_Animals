@@ -7,7 +7,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float MovemntSpeed;
     [SerializeField] float HorSpeed;
     float hor;
+
     void Start()
+
     {
         
     }
