@@ -8,12 +8,12 @@ public class Puan : MonoBehaviour
     private float puan;
     public Text puanText;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Collected"))
+        if (collision.gameObject.tag == "Collected")
         {
             puan += 1;
             puanText.text = puan.ToString();
-        }
+        }      
     }
 }

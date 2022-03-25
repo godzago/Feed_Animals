@@ -13,7 +13,7 @@ public class CollectManager : MonoBehaviour
             other.gameObject.AddComponent<CollectManager>();     
             other.gameObject.GetComponent<BoxCollider>().isTrigger = false;
             other.gameObject.AddComponent<NodeMovment>();
-           other.gameObject.GetComponent<NodeMovment>().ConnectedNode = transform;
+            other.gameObject.GetComponent<NodeMovment>().ConnectedNode = transform;
 
             other.gameObject.tag = "Collected";
         }
