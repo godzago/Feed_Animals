@@ -7,7 +7,8 @@ public class CollectManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {      
         if (other.gameObject.CompareTag("Collect"))
-        {          
+        {
+            other.gameObject.AddComponent<Puan>();
             other.gameObject.transform.position = transform.position + Vector3.forward;
             Destroy(gameObject.GetComponent<CollectManager>());
             other.gameObject.AddComponent<CollectManager>();     

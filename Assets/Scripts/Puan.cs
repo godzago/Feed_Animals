@@ -7,13 +7,20 @@ public class Puan : MonoBehaviour
 {
     private float puan;
     public Text puanText;
-    
-    private void OnCollisionEnter(Collision collision)
+    public GameObject[] Cube;
+
+    private void Start()
     {
-        if (collision.gameObject.tag == "Collected")
+        if (Cube == null)
+            Cube = GameObject.FindGameObjectsWithTag("Coin");
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Coin")
         {
             puan += 1;
             puanText.text = puan.ToString();
-        }      
+        }
     }
 }
