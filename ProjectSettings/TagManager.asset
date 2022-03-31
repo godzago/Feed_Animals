@@ -8,7 +8,7 @@ TagManager:
   - Collect
   - Collected
   - Coin
-  - Text
+  - ScoreManager
   layers:
   - Default
   - TransparentFX

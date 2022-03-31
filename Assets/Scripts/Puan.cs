@@ -5,22 +5,17 @@ using UnityEngine.UI;
 
 public class Puan : MonoBehaviour
 {
-    private float puan;
+    private int puan;
     public Text puanText;
-    public GameObject[] Cube;
-
-    private void Start()
+    void Start()
     {
-        if (Cube == null)
-            Cube = GameObject.FindGameObjectsWithTag("Coin");
+        puan.ToString();
+      //  puan = GameObject.FindGameObjectsWithTag("ScoreManager");
     }
-
-    public void OnCollisionEnter(Collision collision)
+    void Update()
     {
-        if (collision.gameObject.tag == "Coin")
-        {
-            puan += 1;
-            puanText.text = puan.ToString();
-        }
+        puanText.text = puan.ToString();
     }
+  
+
 }

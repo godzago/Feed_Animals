@@ -4,11 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CollectManager : MonoBehaviour
 {
+    public int Coin;
+    public GameObject CoinG;
     private void OnTriggerEnter(Collider other)
-    {      
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Coin++;
+            Destroy(CoinG.gameObject);
+        }
         if (other.gameObject.CompareTag("Collect"))
         {
-            other.gameObject.AddComponent<Puan>();
             other.gameObject.transform.position = transform.position + Vector3.forward;
             Destroy(gameObject.GetComponent<CollectManager>());
             other.gameObject.AddComponent<CollectManager>();     
