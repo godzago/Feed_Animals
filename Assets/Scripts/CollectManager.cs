@@ -6,13 +6,9 @@ public class CollectManager : MonoBehaviour
 {
     public int Coin;
     public GameObject CoinG;
+    public GameObject puanscore;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            Coin++;
-            Destroy(CoinG.gameObject);
-        }
         if (other.gameObject.CompareTag("Collect"))
         {
             other.gameObject.transform.position = transform.position + Vector3.forward;
@@ -21,6 +17,7 @@ public class CollectManager : MonoBehaviour
             other.gameObject.GetComponent<BoxCollider>().isTrigger = false;
             other.gameObject.AddComponent<NodeMovment>();
             other.gameObject.GetComponent<NodeMovment>().ConnectedNode = transform;
+
 
             other.gameObject.tag = "Collected";
         }
