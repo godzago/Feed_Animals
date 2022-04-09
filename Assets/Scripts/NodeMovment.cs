@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NodeMovment : MonoBehaviour
 {
     public Transform ConnectedNode;
+
     void Update()
     {
         transform.position = new Vector3(
