@@ -13,6 +13,7 @@ public class ScoreManeger : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coin"))
         {
+            
             coin++;
             CoinText.text = coin.ToString();
             Destroy(other.gameObject);
