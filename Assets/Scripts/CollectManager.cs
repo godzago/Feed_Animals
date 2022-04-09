@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CollectManager : MonoBehaviour
 {
-    public int Coin;
-    public GameObject CoinG;
-    public GameObject puanscore;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Collect"))
