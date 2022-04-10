@@ -175,7 +175,12 @@ PrefabInstance:
     - target: {fileID: 5634767591545691478, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
       propertyPath: m_Name
-      value: Tris Spark 2
+      value: take
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
+        type: 3}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
@@ -184,8 +189,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
+        type: 3}
       propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5634767591545691480, guid: 05bc110473df9574f8a94afc5484e1b0,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691481, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
@@ -200,17 +225,17 @@ PrefabInstance:
     - target: {fileID: 5634767591545691483, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.5
+      value: 15.138
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691483, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.8
+      value: 29.137
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691483, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -165.23
+      value: -165.321
       objectReference: {fileID: 0}
     - target: {fileID: 5634767591545691483, guid: 05bc110473df9574f8a94afc5484e1b0,
         type: 3}
@@ -328,6 +353,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd0c44e310aeddb4eaa538cacdcdc810, type: 3}
+--- !u!1 &215464822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5634767591545691478, guid: 05bc110473df9574f8a94afc5484e1b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 171822325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &215464823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215464822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30022192, y: 0.3680251, z: 0.41754413}
+  m_Center: {x: -0.011799812, y: 0.02186887, z: 0.20876205}
 --- !u!1 &323312743
 GameObject:
   m_ObjectHideFlags: 0
