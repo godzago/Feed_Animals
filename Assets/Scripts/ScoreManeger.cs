@@ -20,6 +20,7 @@ public class ScoreManeger : MonoBehaviour
 
         if (other.gameObject.CompareTag("Coin"))
         {
+            takeParicle.transform.position = gameObject.transform.position;
             takeParicle.Play();
             coin++;
             CoinText.text = coin.ToString();
