@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-
 public class RestartGame : MonoBehaviour  
 {
     public GameObject RestartScreen;
