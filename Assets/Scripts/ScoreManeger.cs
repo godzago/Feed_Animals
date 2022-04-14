@@ -9,13 +9,12 @@ public class ScoreManeger : MonoBehaviour
     public Text CoinText;
     ParticleSystem takeParicle;
 
-
     private void Start()
-    {     
+    {
         takeParicle = GameObject.Find("take").GetComponent<ParticleSystem>();
         takeParicle.Stop();
     }
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.CompareTag("Coin"))
