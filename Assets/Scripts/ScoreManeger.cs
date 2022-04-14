@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManeger : MonoBehaviour
 {
-    private float coin = 0;
+    private int coin = 0;
     public Text CoinText;
     ParticleSystem takeParicle;
 
@@ -22,6 +22,7 @@ public class ScoreManeger : MonoBehaviour
             takeParicle.transform.position = gameObject.transform.position;
             takeParicle.Play();
             coin++;
+            PlayerPrefs.SetInt("mypuan",coin);
             CoinText.text = coin.ToString();
             Destroy(other.gameObject);
         }
