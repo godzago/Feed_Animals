@@ -11,7 +11,7 @@ public class NodeMovment : MonoBehaviour
         transform.position = new Vector3(
             Mathf.Lerp(transform.position.x,ConnectedNode.position.x,Time.deltaTime * 20),
             ConnectedNode.position.y,
-            ConnectedNode.position.z + -0.35f
+            ConnectedNode.position.z + -0.30f
             );
     }
 }
