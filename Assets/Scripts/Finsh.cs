@@ -10,7 +10,6 @@ public class Finsh : MonoBehaviour
     public Text PuanText;
     public void Start()
     {
-        //Puan = 0;
         Puan = PlayerPrefs.GetInt("mypuan");
         PuanText.text = Puan.ToString();       
     }

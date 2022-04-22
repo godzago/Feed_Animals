@@ -360,6 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Puan: 0
+  PuanText: {fileID: 298586799}
 --- !u!1 &378090226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2691675d5cf08fc4ab159007504cc175,
