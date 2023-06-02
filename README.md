@@ -1,5 +1,9 @@
 # Feed_Animals
 
+In this project, I learned to use the camera in different ways.
+
+Game play video : https://youtu.be/aVMHFwAwG50
+
 ![edit2](https://user-images.githubusercontent.com/48593494/200684222-206cc41b-8a06-4417-943f-67494976668c.jpg)
 
 
